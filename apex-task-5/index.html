@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Final Project</h1>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button onclick="toggleMode()">Dark Mode</button>
+</header>
+
+<section class="hero">
+    <h2>Hello, I'm SHAIK HASEENA</h2>
+    <p>Web Developer | Student | Programmer</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am passionate about web development and enjoy creating
+        responsive websites using HTML, CSS, and JavaScript.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+</section>
+
+<section id="tasks">
+    <h2>Task Manager</h2>
+
+    <input type="text" id="taskInput"
+           placeholder="Enter a task">
+
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+
+    <button onclick="sendMessage()">
+        Send
+    </button>
+
+    <p id="message"></p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:#f4f4f4;
+    color:#333;
+    transition:0.3s;
+}
+
+header{
+    background:#0b6b63;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:#dff5f2;
+}
+
+section{
+    padding:40px;
+}
+
+.skill-box{
+    display:inline-block;
+    background:#0b6b63;
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius:20px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#0b6b63;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#084d48;
+}
+
+ul{
+    margin-top:20px;
+}
+
+li{
+    background:white;
+    margin:10px 0;
+    padding:10px;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.dark{
+    background:#222;
+    color:white;
+}
+
+.dark .hero{
+    background:#333;
+}
+
+.dark li{
+    background:#444;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        margin:15px 0;
+    }
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+
+    section{
+        padding:20px;
+    }
+}
